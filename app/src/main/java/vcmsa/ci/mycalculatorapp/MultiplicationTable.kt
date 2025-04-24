@@ -58,6 +58,11 @@ class MultiplicationTable : AppCompatActivity() {
         // set the string onto the display
         displayingmultiplicationtables.text = tableDisplay
 
+        // Show a congratulatory message
+        Toast.makeText(this, "Well done! You’ve mastered the $tableNumber table 🎉", Toast.LENGTH_LONG).show()
+        // OpenAI (2025) ChatGPT (GPT-4) [Computer software].
+        // Available at: https://chatgpt.com/c/68011741-29e8-8004-8f2d-8a4af2c9635f/ (Accessed: 25 April 2025).
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
